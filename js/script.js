@@ -3,7 +3,7 @@
 let day = 0;
 let hp = 10;
 let money = 10;
-let over = document.getElementById("over");
+let armor = 0;
 
 
 function functionHeal() {
@@ -35,7 +35,7 @@ function functionHeal() {
 function functionFight() {
     day = day + 1;
     hp = hp - getRandomInt(1, 4);
-    money = money + getRandomInt(1, 7);
+    money = money + getRandomInt(1, 9);
     document.getElementById("day_state").innerHTML = day;
     document.getElementById("money_state").innerHTML = money;
     document.getElementById("hp_state").innerHTML = hp;
