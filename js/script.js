@@ -4,8 +4,7 @@ let day = 0;
 let hp = 10;
 let money = 10;
 let over = document.getElementById("over");
-let win
-let game
+
 
 function functionHeal() {
 
