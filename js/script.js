@@ -15,7 +15,7 @@ function functionHeal() {
     if (money > 9) {
         money = money - 10;
         day = day + 1;
-        hp = hp + getRandomInt(1, 5);
+        hp = hp + getRandomInt(1, 7);
     }
     document.getElementById("day_state").innerHTML = day;
     document.getElementById("money_state").innerHTML = money;
@@ -34,8 +34,8 @@ function functionHeal() {
 
 function functionFight() {
     day = day + 1;
-    hp = hp - getRandomInt(1, 4);
-    money = money + getRandomInt(1, 9);
+    hp = hp - getRandomInt(1, 3);
+    money = money + getRandomInt(1, 10);
     document.getElementById("day_state").innerHTML = day;
     document.getElementById("money_state").innerHTML = money;
     document.getElementById("hp_state").innerHTML = hp;
