@@ -171,3 +171,8 @@ main {
 	padding: 100px 20px;
 	display: none;
 }
+.info {
+border: 1px white;
+	border-radius:100px;
+	
+}
