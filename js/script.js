@@ -43,10 +43,11 @@ function functionFight() {
     day = day + 1;
 
     if (armor < 1) {
-        hp = hp - 1;
+        hp = hp - getRandomInt(1, 3);
     }
     if (armor > 0) {
-        hp = hp - getRandomInt(1, 3);
+   
+        hp = hp - 1;
     }
     money = money + getRandomInt(1, 10);
     document.getElementById("day_state").innerHTML = day;
@@ -90,8 +91,8 @@ function functionUpdate() {
         alert("Armor already taken!");
     }
 
-    if (money > 29 && armor < 1 ) {
-        money = money - 30;
+    if (money > 39 && armor < 1 ) {
+        money = money - 40;
         armor = armor + 1;
         document.getElementById("day_state").innerHTML = day;
         document.getElementById("money_state").innerHTML = money;
@@ -102,7 +103,7 @@ function functionUpdate() {
         document.getElementById("update_button").innerHTML = 'Sold out';
     }
 
-    if (money < 30 && armor < 1 ) {
+    if (money < 40 && armor < 1 ) {
         alert("Not enough money!");
     }
 
