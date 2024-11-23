@@ -12,11 +12,13 @@
 
 <body>
     <header>
-        <a href="https://amshevchenkoam.github.io/strategy/" class="strategy">Strategy.com</a>
-        <a href="" class="info">i</a>
+        <a href="index.html" class="strategy">Strategy.com</a>
+        <a href="pages/info.html" class="info">i</a>
     </header>
     <main>
         <div class="game" id="game">
+
+            <div class="states_knight">
         <div class="states">
             <div class="day state">Day:<div id="day_state">0</div>
             </div>
@@ -24,17 +26,27 @@
             </div>
             <div class="money state">Money:<div id="money_state">10</div>
             </div>
+            <div class="armor state">Armor:<div id="armor_state">None</div>
         </div>
+        </div>
+
+        <div class="knight" id="knight"><img src="img/man.svg"></div>
+    </div>
+  
         <div class="buttons">
             <div class="heal button" onclick="functionHeal()">Heal, 10$</div>
             <div class="fight button" onclick="functionFight()">Fight</div>
+            <div class="update button" id="update_button" onclick="functionUpdate()">Update Armor, 30$<div id="armor_price"></div>
         </div>
     </div>
-    <div class="game_over">
-        <div class="over" id="over">GAME OVER</div>
+</div>
+    <div class="game_over" id="over">
+        <div class="over"  >GAME OVER</div>
+        <div class="reload" onclick="reload()"> <img src="img/reload.svg" alt="" class="reload_image"> </div>
     </div>
-    <div class="game_win">
-        <div class="win" id="win">YOU WIN</div>
+    <div class="game_win" id="win">
+        <div class="win" >YOU WIN</div>
+<div class="reload" onclick="reload()"> <img src="img/reload.svg" alt="" class="reload_image"> </div>
     </div>
     </main>
     <footer></footer>

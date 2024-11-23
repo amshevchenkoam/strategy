@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	border: 0;
+
 }
 
 *, *:before, *:after {
@@ -75,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
 	background-color: #0000007e;
-	background-image: url(bg2.jpg);
+	background-image: url(../img/bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover !important;
@@ -91,7 +92,13 @@ header {
 	padding: 10px;
 	position: fixed;
 	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
 }
+
+
 
 a {
 	font-size: 30px;
@@ -106,6 +113,7 @@ a {
 
 a:hover {
 	color: yellow;
+
 }
 
 main {
@@ -120,6 +128,11 @@ main {
 	width: 300px;
 }
 
+.game {
+	padding: 70px 20px 0px;
+
+}
+
 .button {
 	background-color: white;
 	padding: 10px 20px;
@@ -127,7 +140,7 @@ main {
 	user-select: none;
 	font-size: 30px;
 	border-radius: 2px;
-	margin: 5px;
+	margin: 4px 2px;
 
 }
 
@@ -144,15 +157,13 @@ main {
 	color: white;
 	user-select: none;
 	font-size: 20px;
-	padding: 10px 10px;
+	padding: 10px 0px;
 }
 
-.states {
-	padding-top: 50px;
-}
+
 
 .buttons {
-	padding-top: 100px;
+	padding-top: 40px;
 	text-align: center;
 }
 
@@ -160,23 +171,94 @@ main {
 	color: white;
 	font-size: 60px;
 	text-align: center;
-	padding: 100px 20px;
-	display: none;
+	padding: 100px 20px 20px;
+
 }
 
 .win {
 	color: white;
 	font-size: 60px;
 	text-align: center;
-	padding: 100px 20px;
+	padding: 100px 20px 20px;
+
+}
+
+.game_win {
+	user-select: none;
+	display: none;
+
+}
+
+
+
+
+
+.game_over {
+	user-select: none;
 	display: none;
 }
+
+
+
 .info {
-border: 1px white;
-	border-radius:100px;
-	
+	border: 3px solid white;
+	border-radius: 100px;
+	padding: 5px;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	font-size: 18px;
 }
-.strategy {
-flex: 0 0 1 ;
-	
+
+a.info:hover {
+	border: 3px solid yellow;
+}
+
+.reload {
+	width: 30px;
+	height: 30px;
+	justify-self: center;
+}
+
+
+
+.info_h1 {
+	justify-self: center;
+	padding-top: 80px;
+	color: white;
+	font-size: 40px;
+}
+
+.information {
+	padding: 20px 20px;
+	color: white;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.good {
+	display: block;
+	font-size: 25px;
+	justify-self: center;
+}
+
+.states_knight {
+	display: flex;
+}
+
+.states {
+	width: auto;
+}
+
+.knight {
+	width: auto;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+
+}
+
+.knight img {
+	width: 100%;
+	height: 250px;
 }
