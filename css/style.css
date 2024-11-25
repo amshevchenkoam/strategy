@@ -124,7 +124,7 @@ main {
 }
 
 main {
-	height: 100%;
+	height: 100vh;
 	width: 300px;
 }
 
